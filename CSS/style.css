@@ -1,0 +1,73 @@
+.myDiv {
+  background-color: #eaffd0;
+  padding-top: 100px;
+}
+
+body {
+  color: #40514E;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+.Write1 {
+  font-family: cursive;
+}
+
+.Write2 {
+  font-family: 'Srisakdi', cursive;
+  src: url("Fonts/Srisakdi-Regular.ttf");
+}
+
+.bottom-cloud {
+  position: absolute;
+  right: 800px;
+}
+
+.top-cloud {
+  position: relative;
+  left: 300px;
+}
+.dot
+{
+  border-bottom: none;
+  width: 5%;
+
+}
+.intro {
+  width: 70%;
+  margin: auto;
+
+}
+.Hire
+{
+  position: relative;
+  left: 150px;
+}
+.bottom-container {
+  background-color:  #eaffd0;
+  padding: 50px 0 20px;
+}
+.mountain
+{
+  position: relative;
+}
+/* unvisited link */
+.foot:link {
+  color: green;
+}
+
+/* visited link */
+.foot:visited {
+  color: blue;
+}
+
+/* mouse over link */
+.foot:hover {
+  color: yellow;
+}
+
+/* selected link */
+.foot:active {
+  color: red;
+}
