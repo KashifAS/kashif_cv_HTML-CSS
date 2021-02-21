@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" type="text/css" href="CSS/style1.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js">
+</script>
+<script type="text/javascript">
+  (function() {
+    emailjs.init("user_S4aaG4SAkJeXmDj7f53vy"); //please encrypted user id for malicious attacks
+  })();
+				var name = document.getElementById('name').value;
+				var email = document.getElementById('email').value;
+				var phno = document.getElementById('Pno').value;
+				var msg = document.getElementById('msg').value;
+  var templateParams = {
+    to_name: 'xyz',
+    from_name: 'abc',
+    message: 'Please Find out the attached file'
+  };
+
+  emailjs.send('service_9xw2q8q', 'template_shcx5xa', templateParams)
+    .then(function(response) {
+      console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+      console.log('FAILED...', error);
+    });
+</script>
+</head>
+<body>
+<div class="myDiv">
+<h1 id = 'cen'>Please fill the form I will contact you shortly</h1>
+
+<form method="post" >
+  <label for="name">Name</label><br/>
+  <input type="text" id="name" name="name"><br/>
+  <label for="email">Email</label><br/>
+  <input type="email" id="email" name="email"><br/>
+  <label for="Pno">Phone Number</label><br/>
+  <input type="number" id="Pno" name="Pno"><br/>
+  <label for="msg">Message</label><br/>
+  <textarea id="msg" name="msg" rows="4" cols="50"  onfocus=this.value=''>
+   Please enter your message
+  </textarea><br/>
+  <input type="submit" value="Submit"/>
+</form>
+
+</div>
+</body>
+</html>

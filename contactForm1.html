@@ -1,0 +1,38 @@
+<html>
+<head><link rel="stylesheet" type="text/css" href="CSS/style1.css">
+</head>
+<body>
+<div class="myDiv">
+<h1 id = 'cen'>Please fill the form I will contact you shortly</h1>
+<form id="form">
+  <div class="field">
+    <label for="to_name">Name</label><br/>
+    <input type="text" name="to_name" id="to_name">
+  </div>
+  <div class="field">
+    <label for="from_name">Phone number</label><br/>
+    <input type="number" name="from_name" id="from_name">
+  </div>
+  <div class="field">
+    <label for="message">Message</label><br/>
+    <textarea rows="4" cols="50"  onfocus=this.value='' name="message" id="message">
+	   Please enter your message
+  </textarea><br/>
+  </div>
+  <div class="field">
+    <label for="reply_to">Email</label><br/>
+    <input type="email" name="reply_to" id="reply_to">
+  </div>
+
+  <input type="submit" id="button" value="Submit" >
+</form>
+</div>
+
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('user_S4aaG4SAkJeXmDj7f53vy')
+</script>
+<script src="js/mail.js"></script>
+<body>
